@@ -5,14 +5,23 @@
   
 
   
-  <title>Archiv | waiting</title>
+  <title>http用法 | waiting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="waiting">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="keywords" content="HTTP的请求最多包括四个部分，至少包括三个部分（第四部分可以为空） 1 动词 路径 协议&#x2F;版本 2 Key2 ：  value1 2 Key2 ：  value2 2 Key3 ： value3 2 Content-Type ：  application&#x2F;x-www-form-urlencoded 2 Host:www.baidu.com 2 User-Agent ： curl&#x2F;7.54.0 3 4 要上传的数据
+用 Chrome 发请求步骤： 1、打开 Network 2、地址栏输入网址 3、在 Network 点击，查看 request，点击「view source」 4、点击「view source」可以看见请求前三部分 5、如果有请求的第四部分，那么在 FormData 或 Payload 里面可以看到
+HTTP响应包含的内容： 1 协议&#x2F;版本号 状态码 状态解释 2 Key1： value1 2 Key2： value2 2 Content-Length： 17931 2 Content-Type： text&#x2F;html 3 4 要下载的内容
+状态码含义： 1XX不常用 2XX表示成功 3XX表示请求拒绝 4XX表示请求错误 5XX表示服务器出现错误
+Content-Type标注了第4部分的格式，遵循MIME规范
+
+用 Chrome 查看响应： 1、打开 Network 2、输入网址 3、选中第一个响应 4、查看 Response Headers，点击「view source」，点击「view source」，点击「view source」 你会看到响应的前两部分 查看 Response 或者 Preview，你会看到响应的第 4 部分
+curl命令的使用： curl -s -v -H &quot;xxx&quot; -- &quot;xxx&quot; -s 为不显示进度条 -v 为显示请求和响应 -H“xxx” 为添加一个响应头 --“xxx” 添加请求的网址">
+<meta property="og:type" content="article">
+<meta property="og:title" content="http用法">
+<meta property="og:url" content="http://yoursite.com/2018/03/26/http用法/index.html">
 <meta property="og:site_name" content="waiting">
+<meta property="og:updated_time" content="2018-03-26T12:56:47.488Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="waiting">
+<meta name="twitter:title" content="http用法">
   
     <link rel="alternate" href="/atom.xml" title="waiting" type="application/atom+xml">
   
@@ -59,97 +68,60 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/26/http用法/" class="archive-article-date">
-  <time datetime="2018-03-25T23:21:35.000Z" itemprop="datePublished">Mar 26</time>
+        <section id="main"><article id="post-http用法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/26/http用法/" class="article-date">
+  <time datetime="2018-03-25T23:21:35.000Z" itemprop="datePublished">2018-03-26</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/26/http用法/">http用法</a>
+    <h1 class="article-title" itemprop="name">
+      http用法
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/21/命令行/" class="archive-article-date">
-  <time datetime="2018-03-20T23:07:25.000Z" itemprop="datePublished">Mar 21</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/21/命令行/">命令行</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/21/开博大吉/" class="archive-article-date">
-  <time datetime="2018-03-20T22:54:22.000Z" itemprop="datePublished">Mar 21</time>
-</a>
+        
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/21/开博大吉/">开博大吉</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/21/hello-world/" class="archive-article-date">
-  <time datetime="2018-03-20T22:50:40.121Z" itemprop="datePublished">Mar 21</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/26/http用法/" data-id="cjf88lqbu00014cuvehmay2pj" class="article-share-link">Teilen</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/21/hello-world/">Hello World</a>
-    </h1>
-  
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTTP的请求最多包括四个部分，至少包括三个部分（第四部分可以为空）-1-动词-路径-协议-版本-2-Key2-：-value1-2-Key2-：-value2-2-Key3-：-value3-2-Content-Type-：-application-x-www-form-urlencoded-2-Host-www-baidu-com-2-User-Agent-：-curl-7-54-0-3-4-要上传的数据用-Chrome-发请求步骤：-1、打开-Network-2、地址栏输入网址-3、在-Network-点击，查看-request，点击「view-source」-4、点击「view-source」可以看见请求前三部分-5、如果有请求的第四部分，那么在-FormData-或-Payload-里面可以看到HTTP响应包含的内容：-1-协议-版本号-状态码-状态解释-2-Key1：-value1-2-Key2：-value2-2-Content-Length：-17931-2-Content-Type：-text-html-3-4-要下载的内容状态码含义：-1XX不常用-2XX表示成功-3XX表示请求拒绝-4XX表示请求错误-5XX表示服务器出现错误Content-Type标注了第4部分的格式，遵循MIME规范用-Chrome-查看响应：-1、打开-Network-2、输入网址-3、选中第一个响应-4、查看-Response-Headers，点击「view-source」，点击「view-source」，点击「view-source」-你会看到响应的前两部分-查看-Response-或者-Preview，你会看到响应的第-4-部分curl命令的使用：-curl-s-v-H-xxx-xxx-s-为不显示进度条-v-为显示请求和响应-H“xxx”-为添加一个响应头-“xxx”-添加请求的网址/">HTTP的请求最多包括四个部分，至少包括三个部分（第四部分可以为空） 1 动词 路径 协议/版本 2 Key2 ：  value1 2 Key2 ：  value2 2 Key3 ： value3 2 Content-Type ：  application/x-www-form-urlencoded 2 Host:www.baidu.com 2 User-Agent ： curl/7.54.0 3 4 要上传的数据
+用 Chrome 发请求步骤： 1、打开 Network 2、地址栏输入网址 3、在 Network 点击，查看 request，点击「view source」 4、点击「view source」可以看见请求前三部分 5、如果有请求的第四部分，那么在 FormData 或 Payload 里面可以看到
+HTTP响应包含的内容： 1 协议/版本号 状态码 状态解释 2 Key1： value1 2 Key2： value2 2 Content-Length： 17931 2 Content-Type： text/html 3 4 要下载的内容
+状态码含义： 1XX不常用 2XX表示成功 3XX表示请求拒绝 4XX表示请求错误 5XX表示服务器出现错误
+Content-Type标注了第4部分的格式，遵循MIME规范
 
-    </header>
+用 Chrome 查看响应： 1、打开 Network 2、输入网址 3、选中第一个响应 4、查看 Response Headers，点击「view source」，点击「view source」，点击「view source」 你会看到响应的前两部分 查看 Response 或者 Preview，你会看到响应的第 4 部分
+curl命令的使用： curl -s -v -H "xxx" -- "xxx" -s 为不显示进度条 -v 为显示请求和响应 -H“xxx” 为添加一个响应头 --“xxx” 添加请求的网址</a></li></ul>
+
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/03/21/命令行/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">命令行</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         

@@ -16,7 +16,7 @@
 <meta property="og:description" content="如何实现左右布局 在子元素的css中加入float指令 在其父元素的css中加入clearfix：：after指令，即可实现元素的左右布局。  示例如下  html里有两个左右布局的示例：1234&amp;lt;div class=&amp;quot;clearfix&amp;quot;  style=&amp;quot;width: 200px;border:1px solid black;height:20px;&amp;quot;">
 <meta property="og:image" content="http://video.jirengu.com/xdml/image/586a6215-1b18-4a49-86a8-7d9b94f1d3cf/2018-6-7-22-30-16.png">
 <meta property="og:image" content="http://video.jirengu.com/xdml/image/586a6215-1b18-4a49-86a8-7d9b94f1d3cf/2018-6-8-0-42-9.png">
-<meta property="og:updated_time" content="2018-06-08T03:04:03.474Z">
+<meta property="og:updated_time" content="2018-06-08T03:15:35.298Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS的用法和技巧">
 <meta name="twitter:description" content="如何实现左右布局 在子元素的css中加入float指令 在其父元素的css中加入clearfix：：after指令，即可实现元素的左右布局。  示例如下  html里有两个左右布局的示例：1234&amp;lt;div class=&amp;quot;clearfix&amp;quot;  style=&amp;quot;width: 200px;border:1px solid black;height:20px;&amp;quot;">
@@ -58,7 +58,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -111,7 +111,7 @@
 <li>使用text-align:center;可以设置文字的水平居中</li>
 </ul>
 <h2 id="示例如下-2"><a href="#示例如下-2" class="headerlink" title="示例如下"></a>示例如下</h2><p>html中有以下模块：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;one&quot;&gt;</span><br><span class="line">       &lt;div class=&quot;two&quot;&gt;</span><br><span class="line">       &lt;a&gt;水平居中&lt;/a&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
-<p>CSS中这样写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">.one&#123;</span><br><span class="line">    border:1px solid black;</span><br><span class="line">    height:180px;</span><br><span class="line">    width: 200px;</span><br><span class="line">  &#125;</span><br><span class="line">.two&#123;</span><br><span class="line">    border:1px solid red;</span><br><span class="line">    width: 80px;</span><br><span class="line">    margin: 0 auto;</span><br><span class="line">    text-align: center;</span><br><span class="line">  &#125; </span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">## 实现效果：</span><br><span class="line"> </span><br><span class="line">![](//video.jirengu.com/xdml/image/586a6215-1b18-4a49-86a8-7d9b94f1d3cf/2018-6-8-9-59-37.png)</span><br><span class="line"></span><br><span class="line"># 如何实现垂直居中#</span><br><span class="line">- 有一大一小的两个容器，先将大容器设置高度，定位relative</span><br><span class="line">- 将小容器定位absolute，左上角沿y轴下移50%，margin-top上移50%，即可实现容器的垂直居中</span><br><span class="line">- 将行高设置为与高度相同，可实现文字垂直居中</span><br><span class="line"></span><br><span class="line">## 示例如下##</span><br><span class="line">html中有以下模块：</span><br></pre></td></tr></table></figure></p>
+<p>CSS中这样写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">.one&#123;</span><br><span class="line">    border:1px solid black;</span><br><span class="line">    height:180px;</span><br><span class="line">    width: 200px;</span><br><span class="line">  &#125;</span><br><span class="line">.two&#123;</span><br><span class="line">    border:1px solid red;</span><br><span class="line">    width: 80px;</span><br><span class="line">    margin: 0 auto;</span><br><span class="line">    text-align: center;</span><br><span class="line">  &#125; </span><br><span class="line">```  </span><br><span class="line">## 实现效果：</span><br><span class="line">![](//video.jirengu.com/xdml/image/586a6215-1b18-4a49-86a8-7d9b94f1d3cf/2018-6-8-9-59-37.png)</span><br><span class="line"></span><br><span class="line"># 如何实现垂直居中#</span><br><span class="line">- 有一大一小的两个容器，先将大容器设置高度，定位relative</span><br><span class="line">- 将小容器定位absolute，左上角沿y轴下移50%，margin-top上移50%，即可实现容器的垂直居中</span><br><span class="line">- 将行高设置为与高度相同，可实现文字垂直居中</span><br><span class="line"></span><br><span class="line">## 示例如下##</span><br><span class="line">html中有以下模块：</span><br></pre></td></tr></table></figure></p>
 <pre><code>&lt;div class=&quot;one&quot;&gt;
         &lt;div class=&quot;two&quot;&gt;
         &lt;a&gt;垂直居中&lt;/a&gt;
@@ -132,7 +132,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/07/CSS的用法和技巧/" data-id="cji5e0dg700001cuv5d7hs09d" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/06/07/CSS的用法和技巧/" data-id="cji5em24l0000x4uv11k3354v" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS中一些使用技巧与方法/">CSS中一些使用技巧与方法</a></li></ul>
@@ -145,7 +145,7 @@
   
   
     <a href="/2018/03/26/http用法/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Älter</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">http用法</div>
     </a>
   
@@ -196,7 +196,7 @@ curl命令的使用： curl -s -v -H "xxx" -- "xxx" -s 为不显示进度条 -v 
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
@@ -206,7 +206,7 @@ curl命令的使用： curl -s -v -H "xxx" -- "xxx" -s 为不显示进度条 -v 
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
